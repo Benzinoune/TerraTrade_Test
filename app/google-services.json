@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "751856486089",
+    "project_id": "terratradetest",
+    "storage_bucket": "terratradetest.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:751856486089:android:f17c6b2bd22ce4528baf18",
+        "android_client_info": {
+          "package_name": "com.example.terratradetest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "751856486089-1asp2321a07rtfuij60ebar25fvo1vdh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.terratradetest",
+            "certificate_hash": "c67b502bcbade016b6db412c5af209d4e71e8f74"
+          }
+        },
+        {
+          "client_id": "751856486089-gju55tseddiq0ui7qh118pu8l9ct8otq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_RfKhWyGJAnniFpXfM3VBKOYhQQIb0N8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "751856486089-gju55tseddiq0ui7qh118pu8l9ct8otq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
