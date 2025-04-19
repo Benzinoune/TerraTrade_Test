@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/house_1"
+        android:title="HOME" />
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/search"
+        android:title="SEARCH" />
+
+    <item
+        android:id="@+id/sell"
+        android:icon="@drawable/leftrightarrows"
+        android:title="SELL" />
+    <item
+        android:id="@+id/favoris"
+        android:icon="@drawable/heart"
+        android:title="Favorites" />
+    <item
+        android:id="@+id/Profile"
+        android:icon="@drawable/user"
+        android:title="Profile" />
+
+</menu>

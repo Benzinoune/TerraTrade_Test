@@ -1,0 +1,99 @@
+<!-- res/layout/fragment_search.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newWhite"
+    android:elevation="20dp"
+    tools:context=".SearchFragment">
+
+
+    <EditText
+        android:id="@+id/searchInput"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/grey_bg"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/black"
+        android:ems="10"
+        android:hint="Search..."
+        android:inputType="text"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/containerCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchInput">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/categorieSell"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="For Sell"
+            android:textColor="@color/orange"
+            android:textSize="20sp"
+            app:backgroundTint="@color/appColor"
+            app:cornerRadius="50dp"
+            app:iconGravity="start"
+            app:iconPadding="0dp"
+            app:iconSize="40dp"
+            app:iconTint="@color/white" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/categorieRent"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="For Rent"
+            android:textColor="@color/orange"
+            android:textSize="20sp"
+            app:backgroundTint="@color/appColor"
+            app:cornerRadius="50dp"
+            app:iconGravity="start"
+            app:iconPadding="0dp"
+            app:iconSize="40dp"
+            app:iconTint="@color/white" />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchRecycler"
+        android:background="@color/appColor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerCategories"
+        tools:listitem="@layout/fav_item_property" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
