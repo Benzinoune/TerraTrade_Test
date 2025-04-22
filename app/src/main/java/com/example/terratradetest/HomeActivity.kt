@@ -137,14 +137,6 @@ class HomeActivity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_share -> {
-                    // Share the app using an Intent
-                    val shareIntent = Intent().apply {
-                        action = Intent.ACTION_SEND
-                        putExtra(Intent.EXTRA_TEXT, "Check out this awesome app!")
-                        type = "text/plain"
-                    }
-                    startActivity(Intent.createChooser(shareIntent, "Share via"))
-                    drawerLayout.closeDrawers()
                     true
                 }
                 R.id.nav_about -> {
